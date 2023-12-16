@@ -1,0 +1,26 @@
+name: 'Netlify deploy preview into the linked linear ticket'
+description: 'Attach a Netlify deploy preview link to the linked linear ticket if it exist'
+inputs:
+  github-repo:
+    description: GitHub repository the issue originated from
+    required: false
+  github-issue:
+    description: GitHub issue number
+    required: false
+  linear-api-key:
+    description: Linear API key
+    required: true
+  netlify-site-id:
+    description: Netlify site id
+    required: true
+  netlify-domain:
+    description: Netlify domain (if custom)
+    required: false
+    default: 'netlify.app'
+  github-token:
+    description: GitHub Token
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

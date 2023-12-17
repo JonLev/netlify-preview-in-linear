@@ -8,7 +8,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'Github Action Linear Netlify Preview',
       // the proper extensions will be added
-      fileName: 'index',
+      fileName: 'netlify-preview-in-linear',
     },
   },
 });

@@ -1,7 +1,17 @@
 {
   "name": "netlify-preview-in-linear",
   "version": "0.1.0",
-  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/netlify-preview-in-linear.umd.cjs",
+  "module": "./dist/netlify-preview-in-linear.js",
+  "exports": {
+    ".": {
+      "import": "./dist/netlify-preview-in-linear.js",
+      "require": "./dist/netlify-preview-in-linear.umd.cjs"
+    }
+  },
   "type": "module",
   "scripts": {
     "test": "vitest",

@@ -1,5 +1,8 @@
 name: 'Netlify deploy preview into the linked linear ticket'
 description: 'Attach a Netlify deploy preview link to the linked linear ticket if it exist'
+branding:
+  icon: 'link'
+  color: 'purple'
 inputs:
   github-repo:
     description: GitHub repository the issue originated from
